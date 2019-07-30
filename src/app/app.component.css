@@ -1,0 +1,19 @@
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color:inherit;
+  color: white;
+}
+.fill-space {
+flex: 1 1 auto;
+}
+.logo
+{
+  opacity: 1;
+}
+.mat-button
+{
+  opacity: 1;
+}
