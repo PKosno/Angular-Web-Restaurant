@@ -1,18 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar>
   <mat-toolbar-row align="end" (scroll)="onScroll($event)"  [style.background-color]="color">
-    <span class="logo" style="color: black">Logo</span>
+    <span class="logo" style="color: black">Restauracja włoska</span>
     <span class="fill-space"></span>
-    <button mat-button (click)="scroll(target)">Menu</button>
+    <button mat-button (click)="scroll(menu)">Menu</button>
+    <button mat-button (click)="scroll(promotions)">Promocje</button>
     <button mat-button>Rezerwacja stolików</button>
     <button mat-button>Zamówienia</button>
-    <button mat-button>Catering</button>
-    <button mat-button>Promocje</button>
     <button mat-button>Kontakt</button>
     <button mat-button><mat-icon>add_shopping_cart</mat-icon></button>
   </mat-toolbar-row>
 </mat-toolbar>
 <app-system></app-system>
-<div #target>
+<div #menu>
 <app-menu></app-menu>
+</div>
+<div #promotions>
+<app-promotions></app-promotions>
 </div>
