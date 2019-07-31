@@ -8,7 +8,6 @@ import { ScrollDispatcher } from '@angular/cdk/scrolling';
 export class AppComponent {
   primary = 'red';
   color: string;
-  opacity: number;
   @HostListener('window:scroll', ['$event'])
   onScroll(event) {
     const numbers = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -16,9 +15,12 @@ export class AppComponent {
       this.color = "";
      // this.opacity = 1;
     } else if (numbers > 100) {
-      this.color = "rgba(179, 179, 179, .4)";
+      this.color = "rgba(13, 13, 13, .3)";
     //  this.opacity = 0.5;
     }
+  }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior:"smooth"});
   }
 
 }

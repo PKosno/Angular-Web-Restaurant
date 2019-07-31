@@ -11,10 +11,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {ScrollDispatchModule, ScrollingModule} from '@angular/cdk/scrolling';
+import { MenuComponent } from './menu/menu.component';
+import {MatCardModule, MatDividerModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
-    SystemComponent
+    SystemComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,9 @@ import {ScrollDispatchModule, ScrollingModule} from '@angular/cdk/scrolling';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    ScrollingModule
+    ScrollingModule,
+    MatDividerModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

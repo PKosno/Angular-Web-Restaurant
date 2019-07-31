@@ -1,0 +1,12 @@
+.menu-list
+{
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+}
+.example-card {
+  max-width: 300px;
+  max-height: 300px;
+  display: inline-block;
+  margin: 30px;
+}

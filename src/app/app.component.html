@@ -3,8 +3,9 @@
   <mat-toolbar-row align="end" (scroll)="onScroll($event)"  [style.background-color]="color">
     <span class="logo" style="color: black">Logo</span>
     <span class="fill-space"></span>
-    <button mat-button>Menu</button>
-    <button mat-button>Rezerwacja online</button>
+    <button mat-button (click)="scroll(target)">Menu</button>
+    <button mat-button>Rezerwacja stolików</button>
+    <button mat-button>Zamówienia</button>
     <button mat-button>Catering</button>
     <button mat-button>Promocje</button>
     <button mat-button>Kontakt</button>
@@ -12,3 +13,6 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <app-system></app-system>
+<div #target>
+<app-menu></app-menu>
+</div>
