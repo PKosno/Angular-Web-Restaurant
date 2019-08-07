@@ -14,8 +14,7 @@ import {ScrollDispatchModule, ScrollingModule} from '@angular/cdk/scrolling';
 import { MenuComponent } from './menu/menu.component';
 import {MatCardModule, MatDividerModule} from '@angular/material';
 import { PromotionsComponent } from './promotions/promotions.component';
-import 'hammerjs';
-import {NgxHmCarouselModule} from 'ngx-hm-carousel';
+import {OwlModule} from 'ngx-owl-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +34,7 @@ import {NgxHmCarouselModule} from 'ngx-hm-carousel';
     ScrollingModule,
     MatDividerModule,
     MatCardModule,
-    NgxHmCarouselModule
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
