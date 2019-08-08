@@ -1,0 +1,41 @@
+<h2 style="font-style: italic;  font-size: 30px; text-align: center">Rezerwacja stolików</h2>
+<mat-divider></mat-divider>
+<br>
+<div class="reservation" style="background-color: aliceblue">
+  <form class="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Imię i nazwisko</mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Ilość osób</mat-label>
+      <input matInput type="number" min="1">
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input matInput [matDatepicker]="picker" placeholder="Data" [min]="minDate">
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+    <input matInput maxlength="9" minlength="9" placeholder="Nr telefonu">
+    <mat-icon matSuffix>local_phone</mat-icon>
+  </mat-form-field>
+    <mat-form-field appearance="outline" class="message">
+      <mat-label>Wiadomość</mat-label>
+      <textarea matInput placeholder="Textarea" matTextareaAutosize matAutosizeMinRows=1 matAutosizeMaxRows=6></textarea>
+    </mat-form-field>
+      <mat-checkbox style="margin-left: 2%; margin-right: 2%">Wyrażam zgodę na przetwarzanie danych osobowych</mat-checkbox>
+       <button mat-raised-button color="primary" style="margin-left: 5%">Rezerwuj</button>
+  </form>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
