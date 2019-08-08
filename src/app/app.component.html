@@ -5,7 +5,7 @@
     <span class="fill-space"></span>
     <button mat-button (click)="scroll(menu)">Menu</button>
     <button mat-button (click)="scroll(promotions)">Promocje</button>
-    <button mat-button>Rezerwacja stolików</button>
+    <button mat-button (click)="scroll(reservation)">Rezerwacja stolików</button>
     <button mat-button>Zamówienia</button>
     <button mat-button>Kontakt</button>
     <button mat-button><mat-icon>add_shopping_cart</mat-icon></button>
@@ -17,4 +17,7 @@
 </div>
 <div #promotions>
 <app-promotions></app-promotions>
+</div>
+<div #reservation>
+  <app-reservation></app-reservation>
 </div>

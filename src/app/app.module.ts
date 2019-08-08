@@ -12,15 +12,22 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {ScrollDispatchModule, ScrollingModule} from '@angular/cdk/scrolling';
 import { MenuComponent } from './menu/menu.component';
-import {MatCardModule, MatDividerModule} from '@angular/material';
+import {
+  MatCardModule, MatCheckboxModule, MatDatepickerModule, MatDividerModule, MatFormFieldModule, MatGridListModule, MatInputModule,
+  MatNativeDateModule,
+  MatSelectModule
+} from '@angular/material';
 import { PromotionsComponent } from './promotions/promotions.component';
 import {OwlModule} from 'ngx-owl-carousel';
+import { ReservationComponent } from './reservation/reservation.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     SystemComponent,
     MenuComponent,
-    PromotionsComponent
+    PromotionsComponent,
+    ReservationComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,16 @@ import {OwlModule} from 'ngx-owl-carousel';
     ScrollingModule,
     MatDividerModule,
     MatCardModule,
-    OwlModule
+    OwlModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
